@@ -9,13 +9,13 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ArgumentsSource;
 
-public class RedisSortedSetTest {
+public class ConcurrentRedisSortedSetTest {
 
-  private RedisSortedSet classUnderTest;
+  private ConcurrentRedisSortedSet classUnderTest;
 
   @BeforeEach
   public void setUp() {
-    classUnderTest = new RedisSortedSet();
+    classUnderTest = new ConcurrentRedisSortedSet();
   }
 
   @Test
